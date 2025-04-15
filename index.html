@@ -3,72 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acquire Game - Home</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-      }
-      .container {
-        background: white;
-        padding: 40px;
-        border-radius: 16px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-        text-align: center;
-      }
-      h1 {
-        margin-bottom: 40px;
-        color: #333;
-      }
-      .menu {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .menu button {
-        padding: 14px 28px;
-        font-size: 16px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        background-color: #4caf50;
-        color: white;
-        transition: background 0.3s;
-      }
-      .menu button:hover {
-        background-color: #45a049;
-      }
-    </style>
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Acquire Board Game</h1>
-      <div class="menu">
-        <button onclick="startNewGame()">New Game</button>
-        <button onclick="viewRules()">Game Rules</button>
-        <button onclick="joinGame()">Join Game</button>
-      </div>
-    </div>
-
-    <script>
-      function startNewGame() {
-        alert("Starting new game...");
-        // redirect or logic to new game screen
-      }
-      function viewRules() {
-        alert("Showing game rules...");
-        // redirect or show modal
-      }
-      function joinGame() {
-        alert("Joining existing game...");
-        // redirect or logic to join a game
-      }
-    </script>
+    <main>
+      <h1>ACQUIRE</h1>
+      <form class="form" action="/" method="post">
+        <input
+          type="text"
+          name="playerName"
+          placeholder="ENTER YOUR NAME"
+          required
+          min="2"
+        />
+        <button type="submit">Login</button>
+      </form>
+    </main>
   </body>
 </html>
